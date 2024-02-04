@@ -1,11 +1,15 @@
 import Header from "./components/Header"
+import { Route, Routes } from "react-router-dom";
 import Footer from "./components/Footer"
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
     <>
     <Header/>
-      <h1>Projeto final - Pretalab</h1>
+    <Routes>
+      <Route path="/" element={<HomePage/>}/>
+    </Routes>
     <Footer/>
     </>
   )
