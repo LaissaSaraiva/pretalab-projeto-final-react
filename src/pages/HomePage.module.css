@@ -34,6 +34,19 @@
   font-size: 20px;
 }
 
+.description__container .items {
+  margin-top: 20px;
+  filter: invert(1);
+}
+
+.description__container .items ul {
+  justify-content: flex-start;
+}
+
+.description__container .items li:hover {
+  opacity: .7;
+}
+
 .image__container {
   display: flex;
   align-self: flex-end;
