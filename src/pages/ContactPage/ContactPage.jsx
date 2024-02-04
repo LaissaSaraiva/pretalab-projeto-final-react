@@ -7,12 +7,11 @@ const ContactPage = () => {
   return (
     <section className={styles.contact__container}>
       <div className={styles.contact__container__wrapper}>
-        <div>
+        <div className={styles.contact__description}>
           <h1>Contato</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui impedit
-            quia exercitationem atque, minima quae sequi quas pariatur nemo illo
-            hic magni rem voluptatum ipsa?
+            Quer saber mais sobre meus projetos?<br/>
+            Entre em contato!
           </p>
         </div>
         

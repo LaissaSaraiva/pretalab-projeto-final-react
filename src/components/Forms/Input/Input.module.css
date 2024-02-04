@@ -15,6 +15,7 @@
   height: 48px ;
   padding: 0 10px;
   font-weight: 700;
+  color: var(--tertiary-color);
 }
 
 .input__container input::placeholder {

@@ -9,8 +9,10 @@
   padding: 10px;
   border-style: none solid ;
   width: 197px;
+  opacity: .8;
 }
 
 .button__container button:hover {
   cursor: pointer;
+  opacity: 1;
 }

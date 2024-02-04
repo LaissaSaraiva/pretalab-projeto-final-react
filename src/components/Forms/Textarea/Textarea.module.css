@@ -16,6 +16,7 @@
   padding: 10px;
   font-weight: 700;
   resize: none;
+  color: var(--tertiary-color);
 }
 
 .textarea__container textarea::placeholder {

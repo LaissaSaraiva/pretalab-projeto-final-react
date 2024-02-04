@@ -1,11 +1,25 @@
 .contact__container {
   min-height: 100vh;
-  background-color: blueviolet;
   padding-top: 50px;
+  background-color: var(--main-color);
+  background-image: linear-gradient(225deg, var(--main-color) 0%,  var(--tertiary-color) 70%, var(--primary-color) 90%);
+  background-repeat: no-repeat;
 }
 
 .contact__container__wrapper {
   max-width: 968px;
   margin: 0 auto;
-  background-color: antiquewhite;
+}
+
+.contact__description {
+  max-width: 600px;
+  margin: 24px auto;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.contact__description h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
