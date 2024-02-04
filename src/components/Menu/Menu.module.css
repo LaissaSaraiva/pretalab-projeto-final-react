@@ -18,6 +18,8 @@
   text-decoration: none;
   transition: all .6s ease-in-out;
   border-radius: 18px;
+  font-weight: 600;
+  font-size: 14px;
 }
 
 .list__item a:hover{
