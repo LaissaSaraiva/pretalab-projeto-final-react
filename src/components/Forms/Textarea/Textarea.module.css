@@ -17,6 +17,10 @@
   font-weight: 700;
   resize: none;
   color: var(--tertiary-color);
+
+  @media (max-width: 640px) {
+    max-width: 320px;
+  }
 }
 
 .textarea__container textarea::placeholder {

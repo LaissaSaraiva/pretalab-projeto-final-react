@@ -16,6 +16,10 @@
   padding: 0 10px;
   font-weight: 700;
   color: var(--tertiary-color);
+
+  @media (max-width: 640px) {
+    max-width: 320px;
+  }
 }
 
 .input__container input::placeholder {
