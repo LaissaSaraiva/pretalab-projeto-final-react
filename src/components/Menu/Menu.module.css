@@ -4,7 +4,9 @@
   gap: 10px ;
   justify-content: flex-end;
   padding-right: 1rem;
-  background-color: var(--main-color);
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .list__item {
