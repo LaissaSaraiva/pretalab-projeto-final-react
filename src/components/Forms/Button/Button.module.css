@@ -1,0 +1,16 @@
+.button__container {
+  display: flex;
+  justify-content: center;
+}
+
+.button__container button {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px;
+  border-style: none solid ;
+  width: 197px;
+}
+
+.button__container button:hover {
+  cursor: pointer;
+}
