@@ -1,0 +1,11 @@
+.contact__container {
+  min-height: 100vh;
+  background-color: blueviolet;
+  padding-top: 50px;
+}
+
+.contact__container__wrapper {
+  max-width: 968px;
+  margin: 0 auto;
+  background-color: antiquewhite;
+}
