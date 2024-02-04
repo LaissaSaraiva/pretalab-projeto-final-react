@@ -1,5 +1,5 @@
 import React from "react"
-import ListItems from '../components/ListItems/ListItems'
+import ListItems from '../../components/ListItems/ListItems'
 import styles from './HomePage.module.css'
 
 const HomePage = () => {
