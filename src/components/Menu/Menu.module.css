@@ -4,7 +4,7 @@
   gap: 10px ;
   justify-content: flex-end;
   padding-right: 1rem;
-  background-color: blueviolet
+  background-color: var(--main-color);
 }
 
 .list__item {
@@ -13,7 +13,7 @@
 }
 
 .list__item a {
-  color: white;
+  color: var(--primary-color);
   padding: 5px 15px;
   text-decoration: none;
   transition: all .6s ease-in-out;
@@ -23,6 +23,6 @@
 }
 
 .list__item a:hover{
-  background-color: white;
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--main-color);
 }
