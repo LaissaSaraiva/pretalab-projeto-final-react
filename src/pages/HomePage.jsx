@@ -16,7 +16,7 @@ const HomePage = () => {
 
   return (
     <div className={styles.home__background}>
-      <div className={styles.home__container}>
+      <section className={styles.home__container}>
         <div className={styles.description__container}>
           <div className={styles.pre__title}>
             <p>Olá, Eu sou</p>
@@ -28,13 +28,35 @@ const HomePage = () => {
           </div>
 
           <div className={styles.items}>
-            <ListItems items={socialMedia}/>
+            <ListItems items={socialMedia} />
           </div>
         </div>
+
         <div className={styles.image__container}>
           <img className={styles.image} src="/imgs/profile_home.png" alt="" />
         </div>
-      </div>
+      </section>
+
+      <section className={styles.home__container2}>
+        <div className={styles.home__container2__wrapper}>
+          <h2> O que é este Projeto?</h2>
+          <p>Este portfólio foi desenvolvido como projeto final do Módulo de React do Ciclo Formativo Básico da Pretalab.</p>
+          <br />
+          <p>Projeto desenvolvido em React abordando todos os tópicos vistos durante as aulas:</p>
+          <ul>
+            <li>Componentes</li>
+            <li>Props</li>
+            <li>Estados</li>
+            <li>Listas e Keys</li>
+            <li>Hooks</li>
+            <li>onChange e onClick</li>
+            <li>Context API em React</li>
+            <li>React Router DOM</li>
+            <li>Modularização do CSS</li>
+            <li>E outros...</li>
+          </ul>
+        </div>
+      </section>
     </div>
   );
 };
