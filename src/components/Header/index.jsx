@@ -3,8 +3,23 @@ import React from "react";
 import Menu from "../Menu";
 
 const Header = () => {
-  const menuItems = ['Home', 'Sobre mim', 'Comentários', 'Contato']
-  
+  const menuItems = [{
+    name: 'Home',
+    linkTo: '/'
+  },
+  {
+    name: 'Sobre mim',
+    linkTo: '/sobre-mim'
+  },
+  {
+    name: 'Comentários',
+    linkTo: '/comentarios'
+  },
+  {
+    name: 'Contato',
+    linkTo: '/contato'
+  }]
+
   return (
     <header>
       <Menu items={menuItems}/>

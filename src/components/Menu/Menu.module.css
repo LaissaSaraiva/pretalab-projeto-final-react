@@ -4,9 +4,23 @@
   gap: 10px ;
   justify-content: flex-end;
   padding-right: 1rem;
+  background-color: blueviolet
 }
 
 .list__item {
   padding: 10px;
   font-weight: 500;
+}
+
+.list__item a {
+  color: white;
+  padding: 5px 15px;
+  text-decoration: none;
+  transition: all .6s ease-in-out;
+  border-radius: 18px;
+}
+
+.list__item a:hover{
+  background-color: white;
+  color: black;
 }
