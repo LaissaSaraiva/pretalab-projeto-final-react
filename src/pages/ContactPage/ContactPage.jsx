@@ -7,6 +7,11 @@ import Button from "../../components/Forms/Button/Button"
 
 const ContactPage = () => {
 
+function handleClick(event) {
+  event.preventDefault();
+  alert("Obrigada por visitar meu projeto! 😉 Essa função ainda será implementada!")
+}
+
   return (
     <section className={styles.contact__container}>
       <div className={styles.contact__container__wrapper}>
@@ -19,7 +24,7 @@ const ContactPage = () => {
         </div>
         
         <div>
-          <Forms>
+          <Forms onSubmit={handleClick}>
             <Input label='name' type='text' placeholder='Digite seu nome aqui...'/>
             <Input label='email' type='email' placeholder='Digite seu email...'/>
             <Input label='phone' type='text' placeholder='Digite seu telefone (XX) XXXXX-XXXX'/>
