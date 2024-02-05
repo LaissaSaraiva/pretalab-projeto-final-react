@@ -1,6 +1,9 @@
 import React from "react";
 import styles from './ContactPage.module.css'
 import Forms from "../../components/Forms/Forms"
+import Input from "../../components/Forms/Input/Input"
+import Textarea from "../../components/Forms/Textarea/Textarea"
+import Button from "../../components/Forms/Button/Button"
 
 const ContactPage = () => {
 
@@ -16,7 +19,13 @@ const ContactPage = () => {
         </div>
         
         <div>
-          <Forms/>
+          <Forms>
+            <Input label='name' type='text' placeholder='Digite seu nome aqui...'/>
+            <Input label='email' type='email' placeholder='Digite seu email...'/>
+            <Input label='phone' type='text' placeholder='Digite seu telefone (XX) XXXXX-XXXX'/>
+            <Textarea label='message' placeholder='Deixe sua mensagem...'/>
+            <Button type='submit' value='Submit'/>
+          </Forms>
         </div>
 
       </div>
