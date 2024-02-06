@@ -39,7 +39,7 @@ const HomePage = () => {
       <section className={styles.home__container}>
         <div className={styles.description__container}>
           <div className={styles.pre__title}>
-            <p>Olá, Eu sou</p>
+            <p>Olá! Eu sou</p>
           </div>
 
           <div className={styles.title}>
