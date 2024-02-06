@@ -3,15 +3,35 @@ import ListItems from '../../components/ListItems/ListItems'
 import styles from './HomePage.module.css'
 
 const HomePage = () => {
-  const socialMedia = [{
-    path: '/social-media/linkedin.svg',
-    linkTo: 'https://www.linkedin.com/in/laissasc/',
-    alt: 'Logo do LinkedIn'
+  const stacks = [{
+    path: '/stacks/html.svg',
+    alt: 'Logo do HTML',
+    name: 'HTML'
   },
   {
-    path: '/social-media/github.svg',
-    linkTo: 'https://github.com/LaissaSaraiva',
-    alt: 'Logo do Github'
+    path: '/stacks/css.svg',
+    alt: 'Logo do Css',
+    name: 'Css'
+  },
+  {
+    path: '/stacks/js.svg',
+    alt: 'Logo do JavaScript',
+    name: 'JS'
+  },
+  {
+    path: '/stacks/react.svg',
+    alt: 'Logo do React',
+    name: 'React'
+  },
+  {
+    path: '/stacks/git.svg',
+    alt: 'Logo do Git',
+    name: 'Git'
+  },
+  {
+    path: '/stacks/vtexIo.svg',
+    alt: 'Logo VTEX',
+    name: 'VTEX'
   }]
 
   return (
@@ -28,7 +48,7 @@ const HomePage = () => {
           </div>
 
           <div className={styles.items}>
-            <ListItems items={socialMedia} />
+            <ListItems items={stacks} />
           </div>
         </div>
 
