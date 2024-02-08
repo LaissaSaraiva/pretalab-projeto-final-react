@@ -9,7 +9,7 @@ const Header = () => {
   },
   {
     name: 'Sobre mim',
-    linkTo: '/sobre-mim'
+    linkTo: '/sobre'
   },
   {
     name: 'Comentários',
