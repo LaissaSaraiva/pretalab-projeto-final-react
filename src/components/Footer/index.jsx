@@ -23,7 +23,7 @@ const Footer = () => {
         <span>
           Projeto Final do Módulo de React do{" "}
           <span>
-            <a href="https://www.pretalab.com/" rel="noreferrer">
+            <a href="https://www.pretalab.com/" target="_blank" rel="noreferrer">
               Ciclo Formativo Pretalab
             </a>
           </span>
