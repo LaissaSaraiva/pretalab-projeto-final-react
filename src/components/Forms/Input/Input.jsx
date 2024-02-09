@@ -5,7 +5,7 @@ const Input = (input) => {
   return (
     <div className={styles.input__container}>
       <label>{input.label}</label>
-      <input type={input.type} placeholder={input.placeholder} />
+      <input type={input.type} placeholder={input.placeholder} onChange={input.onChange}/>
     </div>
   )
 }

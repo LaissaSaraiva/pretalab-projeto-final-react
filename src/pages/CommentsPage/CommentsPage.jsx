@@ -1,10 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 import Forms from '../../components/Forms/Forms'
 import Textarea from '../../components/Forms/Textarea/Textarea'
 import Button from '../../components/Forms/Button/Button'
 import styles from './Comments.module.css'
 
 const CommentsPage = () => {
+
+  const [newComment, setNewComment] = useState('');
+  console.log(newComment, 'Input digitado')
+
+
   return (
     <main className={styles.comments__container}>
       <section>
@@ -16,7 +21,7 @@ const CommentsPage = () => {
 
           <div className={styles.comments__form}>
             <Forms>
-              <Textarea placeholder="Escreva seu comentário... " />
+              <Textarea placeholder="Escreva seu comentário... " onChange={(event) => setNewComment((event.target.value))} value={newComment} />
               <Button type="submit" value="+" />
             </Forms>
           </div>
