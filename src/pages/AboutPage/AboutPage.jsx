@@ -49,7 +49,7 @@ const AboutPage = () => {
               <summary>O que é o Ciclo Formativo?</summary>
               <p>
                 É uma qualificação técnica gratuita para mulheres negras e
-                indígenas de todo o Brasil. <br /> Uma metodologia baseada no
+                indígenas de todo o Brasil. Uma metodologia baseada no
                 conhecimento técnico, autogestão e autoconhecimento que já
                 capacitou mais de 700 mulheres negras.
               </p>
@@ -57,14 +57,9 @@ const AboutPage = () => {
             <details>
               <summary>Minha visão sobre o Curso</summary>
               <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Similique sapiente accusamus dolores eius ipsa ad harum
-                reiciendis tempore voluptates mollitia eligendi, ullam officiis
-                alias praesentium maiores blanditiis repellat necessitatibus ea
-                dignissimos quae molestias ipsam tempora? Autem fugiat quo
-                mollitia facere doloribus velit necessitatibus, tempore
-                repudiandae vel, voluptate veniam, debitis dolore!
+               Estou muito satisfeita com a qualidade dos módulos e com a didática das professoras e monitoras.<br/> Apesar de ter conhecimento prévio em HTML, CSS e JavaScript, aqui no Ciclo Formativo foi a primeira vez que estudei conceitos de React e posso dizer que construí uma base sólida.
               </p>
+              <p>Encerro esse curso com muita gratidão.</p>
             </details>
           </div>
         </div>
