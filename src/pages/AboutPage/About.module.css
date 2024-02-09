@@ -3,11 +3,14 @@
   padding-top: 50px;
   background-color: #000000;
   background-image: linear-gradient(250deg, var(--main-color) 0%, #1a1c37 22%, var(--tertiary-color) 44%, var(--primary-color)100%);
-  background-repeat: no-repeat;
 
   @media(max-width: 640px) {
     padding-top: 100px;
   }
+}
+
+.aboutPage__faq {
+  min-height: 60vh;
 }
 
 .aboutPage__wrapper {
@@ -17,15 +20,71 @@
 
 .aboutPage__description  {
   margin: 24px auto;
-  color: var(--primary-color);
   text-align: center;
   padding: 0 10px
+}
+
+.aboutPage__description h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--primary-color);
 }
 
 .aboutPage__description h2 {
   text-transform: uppercase;
   font-weight: 600;
   margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.faq__container {
+  color: var(--primary-color);
+}
+
+.faq__container details {
+  margin-bottom: 20px;
+}
+
+.faq__container summary {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.faq__container p {
+  margin-top: 5px;
+  font-weight: 200;
+  font-size: 16px;
+  max-width: 968px;
+  padding: 0px 25px;
+  text-align: justify;
+}
+
+.faq__container summary::marker {
+  color: transparent;
+}
+
+.faq__container summary:before {
+  content: "+";
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0 5px;
+  padding: 0;
+  width: 20px;
+  text-align: center;
+}
+
+.faq__container details[open] summary:before {
+ content: "-";
+}
+
+.faq__container p {
+  font-weight: 200;
+}
+
+.aboutPage__projects {
+  background-color: var(--primary-color);
+  padding: 24px 0;
 }
 
 .projects__container ul {
@@ -40,7 +99,7 @@
 }
 
 .projects__container li {
-  background-color: var(--primary-color)
+  background-color: var(--tertiary-color)
 }
 
 .projects__container li img {
