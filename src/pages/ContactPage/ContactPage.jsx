@@ -24,12 +24,12 @@ function handleClick(event) {
         </div>
         
         <div>
-          <Forms>
+          <Forms onSubmit={handleClick}>
             <Input label='name' type='text' placeholder='Digite seu nome aqui...'/>
             <Input label='email' type='email' placeholder='Digite seu email...'/>
             <Input label='phone' type='text' placeholder='Digite seu telefone (XX) XXXXX-XXXX'/>
             <Textarea label='message' placeholder='Deixe sua mensagem...'/>
-            <Button  value='Submit' onClick={handleClick}/>
+            <Button type='submit' value='Submit'/>
           </Forms>
         </div>
 
