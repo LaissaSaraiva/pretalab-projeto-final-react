@@ -52,13 +52,14 @@
 }
 
 .list__comments__wrapper button:before {
-  content: url('/public/imgs/trash-can.svg');
+  content: url('/imgs/trash-can.svg');
 }
 
 .list__description {
   background-color: var(--primary-color);
   padding: 16px 24px;
   color: var(--tertiary-color);
+  width: 678px
 }
 
 .list__button {

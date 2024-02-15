@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Forms from '../../components/Forms/Forms'
 import Textarea from '../../components/Forms/Textarea/Textarea'
 import Button from '../../components/Forms/Button/Button'
@@ -6,10 +6,24 @@ import styles from './Comments.module.css'
 
 const CommentsPage = () => {
 
-  const [newComment, setNewComment] = useState('');
-  // const [list, setList] = useState('')
-  console.log(newComment, 'Input digitado')
+  const [newComment, setNewComment] = useState('')
+  const [list, setList] = useState([])
 
+  function createNewComment() {
+    const comment = {
+      id: '',
+      description: newComment,
+      isEmpty: false
+    }
+
+    if(comment.description === '') {
+      return
+    }
+
+    setList([...list, comment])
+    setNewComment('')
+    console.log('aqui apertei o botao')
+  }
 
   return (
     <main className={styles.comments__container}>
@@ -23,45 +37,25 @@ const CommentsPage = () => {
           <div className={styles.comments__form}>
             <Forms>
               <Textarea placeholder="Escreva seu comentário... "  onChange={(event) => setNewComment((event.target.value))} value={newComment} />
-              <Button type="submit" value="+" />
+              <Button type="button" value="+" onClick={createNewComment} />
             </Forms>
           </div>
         </div>
 
         <div className={styles.list__comments__wrapper}>
           <ul>
-            <li>
-              <div className={styles.list__description}>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolore hic quibusdam rerum nisi aspernatur iure omnis tenetur, illo eligendi deserunt mollitia quam porro labore libero minima voluptates, perferendis tempora!</p>
-              </div>
-              
-              <Button className={styles.list__button} value=""/>
-            </li>
+            {list.map(comment => {
 
-            <li>
-              <div className={styles.list__description}>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolore hic quibusdam rerum nisi aspernatur iure omnis tenetur, illo eligendi deserunt mollitia quam porro labore libero minima voluptates, perferendis tempora!</p>
-              </div>
-              
-              <Button className={styles.list__button} value=""/>
-            </li>
-
-            <li>
-              <div className={styles.list__description}>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolore hic quibusdam rerum nisi aspernatur iure omnis tenetur, illo eligendi deserunt mollitia quam porro labore libero minima voluptates, perferendis tempora!</p>
-              </div>
-              
-              <Button className={styles.list__button} value=""/>
-            </li>
-
-            <li>
-              <div className={styles.list__description}>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dolore hic quibusdam rerum nisi aspernatur iure omnis tenetur, illo eligendi deserunt mollitia quam porro labore libero minima voluptates, perferendis tempora!</p>
-              </div>
-              
-              <Button className={styles.list__button} value=""/>
-            </li>
-          </ul>
+              return(
+                <li key={comment.id}>
+                <div className={styles.list__description}>
+                  <p>{comment.description}</p>
+                </div>
+                <Button className={styles.list__button} value=""/>
+              </li>
+              )
+            })}
+         </ul>
         </div>
       </section>
     </main>
