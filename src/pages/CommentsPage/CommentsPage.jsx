@@ -22,7 +22,6 @@ const CommentsPage = () => {
 
     setList([...list, comment])
     setNewComment('')
-    console.log('aqui apertei o botao')
   }
 
   return (

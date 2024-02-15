@@ -29,7 +29,7 @@ function handleClick(event) {
             <Input label='email' type='email' placeholder='Digite seu email...'/>
             <Input label='phone' type='text' placeholder='Digite seu telefone (XX) XXXXX-XXXX'/>
             <Textarea label='message' placeholder='Deixe sua mensagem...'/>
-            <Button type='button' value='Submit' onClick={handleClick}/>
+            <Button  value='Submit' onClick={handleClick}/>
           </Forms>
         </div>
 
