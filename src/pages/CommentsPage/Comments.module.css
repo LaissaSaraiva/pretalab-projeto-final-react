@@ -30,3 +30,37 @@
 .comments__form {
   margin-top: 24px;
 }
+
+.list__comments__wrapper {
+  padding: 42px 0 36px;
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.list__comments__wrapper li {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 16px;
+  padding: 0 12px;
+}
+
+.list__comments__wrapper button {
+  width: 50px;
+  border-radius: 8px;
+  border: none;
+}
+
+.list__comments__wrapper button:before {
+  content: url('/public/imgs/trash-can.svg');
+}
+
+.list__description {
+  background-color: var(--primary-color);
+  padding: 16px 24px;
+  color: var(--tertiary-color);
+}
+
+.list__button {
+  background-color: aqua;
+}
