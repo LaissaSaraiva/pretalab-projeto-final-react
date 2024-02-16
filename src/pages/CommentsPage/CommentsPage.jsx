@@ -2,18 +2,27 @@ import React, { useEffect, useState } from "react"
 import Forms from '../../components/Forms/Forms'
 import Textarea from '../../components/Forms/Textarea/Textarea'
 import Button from '../../components/Forms/Button/Button'
+import { nanoid } from 'nanoid'
 import styles from './Comments.module.css'
 
 const CommentsPage = () => {
+  const getLocalList = () => {
+    let items = localStorage.getItem('list')
+  
+    if (items) {
+      return JSON.parse(localStorage.getItem('list'))
+    } else {
+      return []
+    }
+  }
 
-  const [newComment, setNewComment] = useState('')
+  const [newComment, setNewComment] = useState(getLocalList)
   const [list, setList] = useState([])
 
   function createNewComment() {
     const comment = {
-      id: '',
-      description: newComment,
-      isEmpty: false
+      id: nanoid(),
+      description: newComment
     }
 
     if(comment.description === '') {
@@ -23,6 +32,15 @@ const CommentsPage = () => {
     setList([...list, comment])
     setNewComment('')
   }
+
+  function removeComment(id) {
+    const commentsFiltered = list.filter(comment => comment.id !== id)
+    setList(commentsFiltered)
+  }
+
+  useEffect(() => {
+    localStorage.setItem('list', JSON.stringify(list))
+  }, [list])
 
   return (
     <main className={styles.comments__container}>
@@ -50,7 +68,7 @@ const CommentsPage = () => {
                 <div className={styles.list__description}>
                   <p>{comment.description}</p>
                 </div>
-                <Button className={styles.list__button} value=""/>
+                <Button className={styles.list__button} value="" onClick={() => {removeComment(comment.id)}}/>
               </li>
               )
             })}
