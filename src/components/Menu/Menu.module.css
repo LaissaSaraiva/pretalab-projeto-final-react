@@ -10,7 +10,6 @@
 
   @media (max-width: 640px) {
     justify-content: center;
-    left: 0px;
     gap: 0px ;
     padding: 0;
   }
