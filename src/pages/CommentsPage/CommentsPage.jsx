@@ -68,7 +68,7 @@ const CommentsPage = () => {
                 <div className={styles.list__description}>
                   <p>{comment.description}</p>
                 </div>
-                <Button className={styles.list__button} value="" onClick={() => {removeComment(comment.id)}}/>
+                <Button value="" onClick={() => {removeComment(comment.id)}}/>
               </li>
               )
             })}
