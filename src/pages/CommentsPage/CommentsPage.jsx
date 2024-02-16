@@ -16,8 +16,8 @@ const CommentsPage = () => {
     }
   }
 
-  const [newComment, setNewComment] = useState(getLocalList)
-  const [list, setList] = useState([])
+  const [newComment, setNewComment] = useState('')
+  const [list, setList] = useState(getLocalList)
 
   function createNewComment() {
     const comment = {
