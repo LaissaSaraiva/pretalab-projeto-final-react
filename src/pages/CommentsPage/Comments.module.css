@@ -1,7 +1,7 @@
 .comments__container {
   min-height: 100vh;
   padding-top: 50px;
-  background-color: #000000;
+  background-color: var(--main-color);
   background-image: linear-gradient(250deg, var(--main-color) 0%, #1a1c37 22%, var(--tertiary-color) 44%, var(--primary-color)100%);
   background-repeat: no-repeat;
 
